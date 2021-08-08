@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBusiness.Vistas.CrearCorreo"
+             xmlns:degradado="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <degradado:PancakeView Grid.RowSpan="2" BackgroundGradientStartPoint="0,1"
+                               BackgroundGradientEndPoint="0,0">
+            <degradado:PancakeView.BackgroundGradientStops>
+                <degradado:GradientStopCollection>
+                    <degradado:GradientStop Color="#8EEAFB" Offset="0"/>
+                    <degradado:GradientStop Color="#BCF3FD" Offset="0.8"/>
+                </degradado:GradientStopCollection>
+            </degradado:PancakeView.BackgroundGradientStops>
+            
+        </degradado:PancakeView>
+        <Image WidthRequest="20" Source="https://i.ibb.co/Nm1DNqt/tienda.png" Margin="0,80,0,30" Grid.Row="0"/>
+        <StackLayout Grid.Row="1"
+                     Margin="20"
+                     Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HeightRequest="40">
+                <Button Text="Subir Imagen"
+                        BackgroundColor="#31C3A2"
+                        TextColor="White"
+                        CornerRadius="10"/>
+                <Image WidthRequest="28" Source="https://i.ibb.co/hVF5hBH/camara.png"/>
+
+            </StackLayout>
+            <Entry TextColor="White"
+                   Placeholder="Nombres"
+                   FontAttributes="Bold"/>
+            <Entry TextColor="White"
+                   Placeholder="Correo"
+                   FontAttributes="Bold"/>
+            <Entry TextColor="White"
+                   Placeholder="Contraseña"
+                   FontAttributes="Bold"/>
+            <Button Text="Crear Cuenta"
+                    BackgroundColor="White"
+                    TextColor="Black"
+                    CornerRadius="10"
+                    WidthRequest="250"
+                    HorizontalOptions="Center"/>
+
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>
+ 

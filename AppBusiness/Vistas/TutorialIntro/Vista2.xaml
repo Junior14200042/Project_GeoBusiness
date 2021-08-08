@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBusiness.Vistas.TutorialIntro.Vista2">
+    <Grid BackgroundColor="#221C27">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Image Source="https://i.ibb.co/zXX1SQ9/img2.png"
+               Grid.Row="0"
+               Margin="14,0,14,0"/>
+        <Label Text="Encuentra el negocio" Grid.Row="1"
+               TextColor="White"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               FontSize="18"/>
+        <Label Text="MÁS CERCANO" Grid.Row="2"
+               TextColor="White"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="40"/>
+
+    </Grid>
+</ContentView>
